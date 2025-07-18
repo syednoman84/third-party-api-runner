@@ -1,0 +1,23 @@
+{
+  "url": "https://reqres.in/api/users/2",
+  "method": "GET",
+  "headers": {
+    "x-api-key": "reqres-free-v1"
+  },
+  "defaultParams": {},
+  "auth": {
+    "type": "jwt",
+    "tokenUrl": "https://reqres.in/api/login",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "x-api-key": "reqres-free-v1"
+    },
+    "body": {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka"
+    },
+    "tokenField": "token",
+    "tokenPrefix": "Bearer"
+  }
+}

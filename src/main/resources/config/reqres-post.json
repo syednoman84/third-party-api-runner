@@ -1,0 +1,27 @@
+{
+  "url": "https://reqres.in/api/users",
+  "method": "POST",
+  "headers": {
+    "Content-Type": "application/json",
+    "x-api-key": "reqres-free-v1"
+  },
+  "mainBody": {
+    "name": "John Doe",
+    "job": "Software Engineer"
+  },
+  "auth": {
+    "type": "jwt",
+    "tokenUrl": "https://reqres.in/api/login",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "x-api-key": "reqres-free-v1"
+    },
+    "body": {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka"
+    },
+    "tokenField": "token",
+    "tokenPrefix": "Bearer"
+  }
+}

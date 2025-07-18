@@ -1,0 +1,12 @@
+{
+  "url": "https://jsonplaceholder.typicode.com/posts",
+  "method": "POST",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "mainBody": {
+    "title": "Hello World",
+    "body": "This is a test post",
+    "userId": 42
+  }
+}

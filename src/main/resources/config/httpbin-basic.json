@@ -1,0 +1,11 @@
+{
+  "url": "https://httpbin.org/basic-auth/user/passwd",
+  "method": "GET",
+  "headers": {},
+  "defaultParams": {},
+  "auth": {
+    "type": "basic",
+    "username": "user",
+    "password": "passwd"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://api.weatherapi.com/v1/current.json",
+  "method": "GET",
+  "headers": {},
+  "defaultParams": {
+    "key": "593d83a05a6a4e5991e141928251707",
+    "aqi": "no"
+  }
+}
+

@@ -1,0 +1,20 @@
+{
+  "url": "https://api.currencyapi.com/v3/latest",
+  "method": "GET",
+  "headers": {},
+  "defaultParams": {},
+  "auth": {
+    "type": "jwt",
+    "tokenUrl": "https://auth.currencyapi.com/token",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "client_id": "myclient",
+      "client_secret": "mysecret"
+    },
+    "tokenField": "access_token",
+    "tokenPrefix": "Bearer"
+  }
+}
