@@ -1,5 +1,6 @@
 package com.example.thirdpartyapirunner.entity;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Lob;
@@ -39,6 +40,9 @@ public class ApiCallLog {
 
     @Lob
     private String tokenResponseBody;
+
+    @Column(columnDefinition = "TEXT")
+    private String mainResponseHeaders;
 
     private boolean success;
 

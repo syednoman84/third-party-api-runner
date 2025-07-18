@@ -407,7 +407,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/configs/weather",
+					"raw": "http://localhost:8080/api/configs/update/weather",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -416,6 +416,7 @@
 					"path": [
 						"api",
 						"configs",
+						"update",
 						"weather"
 					]
 				},
@@ -429,7 +430,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/api/configs/weather",
+					"raw": "http://localhost:8080/api/configs/delete/weather2",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -438,7 +439,8 @@
 					"path": [
 						"api",
 						"configs",
-						"weather"
+						"delete",
+						"weather2"
 					]
 				},
 				"description": "Generated from cURL: curl -X DELETE http://localhost:8080/api/configs/weather\n"

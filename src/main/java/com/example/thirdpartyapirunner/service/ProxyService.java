@@ -45,6 +45,7 @@ public class ProxyService {
         String mainRequestBody = null;
         String mainResponseBody = null;
         String mainRequestHeaders = null;
+        String mainResponseHeaders = null;
 
         ProxyResult result = new ProxyResult();
 
@@ -140,6 +141,7 @@ public class ProxyService {
             mainRequestHeaders = headers.toString();
             ResponseEntity<String> response = restTemplate.exchange(targetUri, HttpMethod.valueOf(method), entity, String.class);
             mainResponseBody = response.getBody();
+            mainResponseHeaders = response.getHeaders().toString();
 
             // --- Logging ---
             log.setTokenRequestBody(tokenRequestBody);
@@ -151,6 +153,8 @@ public class ProxyService {
             log.setMainResponseBody(mainResponseBody);
             log.setMainRequestHeaders(mainRequestHeaders);
             log.setMainRequestParams(allParams.toString());
+            log.setMainResponseHeaders(mainResponseHeaders);
+
 
             log.setSuccess(true);
             logRepository.save(log);
@@ -176,6 +180,7 @@ public class ProxyService {
 
             result.setMainResponseBody(null);
             result.setTokenResponseBody(tokenResponseBody);
+            result.setMainResponseHeaders(mainResponseHeaders);
             result.setErrorMessage(ex.getMessage());
             result.setSuccess(false);
             return result;
