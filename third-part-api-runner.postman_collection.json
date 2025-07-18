@@ -1,0 +1,449 @@
+{
+	"info": {
+		"_postman_id": "1f55e569-6ec9-4682-a48f-c39b27de1fe9",
+		"name": "third-part-api-runner",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13380147"
+	},
+	"item": [
+		{
+			"name": "weather",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/proxy/weather?q=Karachi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"proxy",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Karachi"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "jsonplaceholder",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/proxy/jsonplaceholder",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"proxy",
+						"jsonplaceholder"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "holidays",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/proxy/holidays",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"proxy",
+						"holidays"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "httpbin-basic",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/proxy/httpbin-basic",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"proxy",
+						"httpbin-basic"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reqres-jwt",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/proxy/reqres-jwt",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"proxy",
+						"reqres-jwt"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reqres-post",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/proxy/reqres-post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"proxy",
+						"reqres-post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addConfigs-weather",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"url\": \"https://api.weatherapi.com/v1/current.json\",\n    \"method\": \"GET\",\n    \"headers\": {},\n    \"defaultParams\": {\n      \"key\": \"593d83a05a6a4e5991e141928251707\",\n      \"aqi\": \"no\"\n    }\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/configs/add/weather",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"configs",
+						"add",
+						"weather"
+					]
+				},
+				"description": "Generated from cURL: curl -X POST http://localhost:8080/api/configs/weather \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\n    \"url\": \"https://api.weatherapi.com/v1/current.json\",\n    \"method\": \"GET\",\n    \"headers\": {},\n    \"defaultParams\": {\n      \"key\": \"593d83a05a6a4e5991e141928251707\",\n      \"aqi\": \"no\"\n    }\n  }'\n"
+			},
+			"response": []
+		},
+		{
+			"name": "getConfigs",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/configs/reqres-post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"configs",
+						"reqres-post"
+					]
+				},
+				"description": "Generated from cURL: curl -X POST http://localhost:8080/api/configs/weather \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\n    \"url\": \"https://api.weatherapi.com/v1/current.json\",\n    \"method\": \"GET\",\n    \"headers\": {},\n    \"defaultParams\": {\n      \"key\": \"593d83a05a6a4e5991e141928251707\",\n      \"aqi\": \"no\"\n    }\n  }'\n"
+			},
+			"response": []
+		},
+		{
+			"name": "addConfigs-jsonplaceholder",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"url\": \"https://jsonplaceholder.typicode.com/posts\",\n  \"method\": \"POST\",\n  \"headers\": {\n    \"Content-Type\": \"application/json\"\n  },\n  \"mainBody\": {\n    \"title\": \"Hello World\",\n    \"body\": \"This is a test post\",\n    \"userId\": 42\n  }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/configs/add/jsonplaceholder",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"configs",
+						"add",
+						"jsonplaceholder"
+					]
+				},
+				"description": "Generated from cURL: curl -X POST http://localhost:8080/api/configs/weather \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\n    \"url\": \"https://api.weatherapi.com/v1/current.json\",\n    \"method\": \"GET\",\n    \"headers\": {},\n    \"defaultParams\": {\n      \"key\": \"593d83a05a6a4e5991e141928251707\",\n      \"aqi\": \"no\"\n    }\n  }'\n"
+			},
+			"response": []
+		},
+		{
+			"name": "addConfigs-holidays",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"url\": \"https://date.nager.at/api/v3/PublicHolidays/2024/US\",\n  \"method\": \"GET\",\n  \"headers\": {},\n  \"defaultParams\": {}\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/configs/add/holidays",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"configs",
+						"add",
+						"holidays"
+					]
+				},
+				"description": "Generated from cURL: curl -X POST http://localhost:8080/api/configs/weather \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\n    \"url\": \"https://api.weatherapi.com/v1/current.json\",\n    \"method\": \"GET\",\n    \"headers\": {},\n    \"defaultParams\": {\n      \"key\": \"593d83a05a6a4e5991e141928251707\",\n      \"aqi\": \"no\"\n    }\n  }'\n"
+			},
+			"response": []
+		},
+		{
+			"name": "addConfigs-httpbin-basic",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"url\": \"https://httpbin.org/basic-auth/user/passwd\",\n  \"method\": \"GET\",\n  \"headers\": {},\n  \"defaultParams\": {},\n  \"auth\": {\n    \"type\": \"basic\",\n    \"username\": \"user\",\n    \"password\": \"passwd\"\n  }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/configs/add/httpbin-basic",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"configs",
+						"add",
+						"httpbin-basic"
+					]
+				},
+				"description": "Generated from cURL: curl -X POST http://localhost:8080/api/configs/weather \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\n    \"url\": \"https://api.weatherapi.com/v1/current.json\",\n    \"method\": \"GET\",\n    \"headers\": {},\n    \"defaultParams\": {\n      \"key\": \"593d83a05a6a4e5991e141928251707\",\n      \"aqi\": \"no\"\n    }\n  }'\n"
+			},
+			"response": []
+		},
+		{
+			"name": "addConfigs-reqres-jwt",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"url\": \"https://reqres.in/api/users/2\",\n  \"method\": \"GET\",\n  \"headers\": {\n    \"x-api-key\": \"reqres-free-v1\"\n  },\n  \"defaultParams\": {},\n  \"auth\": {\n    \"type\": \"jwt\",\n    \"tokenUrl\": \"https://reqres.in/api/login\",\n    \"method\": \"POST\",\n    \"headers\": {\n      \"Content-Type\": \"application/json\",\n      \"x-api-key\": \"reqres-free-v1\"\n    },\n    \"body\": {\n      \"email\": \"eve.holt@reqres.in\",\n      \"password\": \"cityslicka\"\n    },\n    \"tokenField\": \"token\",\n    \"tokenPrefix\": \"Bearer\"\n  }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/configs/add/reqres-jwt",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"configs",
+						"add",
+						"reqres-jwt"
+					]
+				},
+				"description": "Generated from cURL: curl -X POST http://localhost:8080/api/configs/weather \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\n    \"url\": \"https://api.weatherapi.com/v1/current.json\",\n    \"method\": \"GET\",\n    \"headers\": {},\n    \"defaultParams\": {\n      \"key\": \"593d83a05a6a4e5991e141928251707\",\n      \"aqi\": \"no\"\n    }\n  }'\n"
+			},
+			"response": []
+		},
+		{
+			"name": "addConfigs-reqres-post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"url\": \"https://reqres.in/api/users\",\n  \"method\": \"POST\",\n  \"headers\": {\n    \"Content-Type\": \"application/json\",\n    \"x-api-key\": \"reqres-free-v1\"\n  },\n  \"mainBody\": {\n    \"name\": \"John Doe\",\n    \"job\": \"Software Engineer\"\n  },\n  \"auth\": {\n    \"type\": \"jwt\",\n    \"tokenUrl\": \"https://reqres.in/api/login\",\n    \"method\": \"POST\",\n    \"headers\": {\n      \"Content-Type\": \"application/json\",\n      \"x-api-key\": \"reqres-free-v1\"\n    },\n    \"body\": {\n      \"email\": \"eve.holt@reqres.in\",\n      \"password\": \"cityslicka\"\n    },\n    \"tokenField\": \"token\",\n    \"tokenPrefix\": \"Bearer\"\n  }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/configs/add/reqres-post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"configs",
+						"add",
+						"reqres-post"
+					]
+				},
+				"description": "Generated from cURL: curl -X POST http://localhost:8080/api/configs/weather \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\n    \"url\": \"https://api.weatherapi.com/v1/current.json\",\n    \"method\": \"GET\",\n    \"headers\": {},\n    \"defaultParams\": {\n      \"key\": \"593d83a05a6a4e5991e141928251707\",\n      \"aqi\": \"no\"\n    }\n  }'\n"
+			},
+			"response": []
+		},
+		{
+			"name": "updateConfig",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"url\": \"https://api.weatherapi.com/v1/current.json\",\n    \"method\": \"GET\",\n    \"headers\": {},\n    \"defaultParams\": {\n      \"key\": \"593d83a05a6a4e5991e141928251707\",\n      \"aqi\": \"no\"\n    }\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/configs/weather",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"configs",
+						"weather"
+					]
+				},
+				"description": "Generated from cURL: curl -X PUT http://localhost:8080/api/configs/weather \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"url\":\"https://api.weatherapi.com/v1/current.json\",\"method\":\"GET\",\"defaultParams\":{\"key\":\"updated-key\"}}'\n"
+			},
+			"response": []
+		},
+		{
+			"name": "deleteConfig",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/configs/weather",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"configs",
+						"weather"
+					]
+				},
+				"description": "Generated from cURL: curl -X DELETE http://localhost:8080/api/configs/weather\n"
+			},
+			"response": []
+		}
+	]
+}
