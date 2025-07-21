@@ -82,7 +82,7 @@ const RunProxy = () => {
                     />
                 </div>
 
-                <h4>Query Parameters</h4>
+                <label>Query Parameters:</label>
                 {params.map((p, i) => (
                     <div key={i}>
                         <input
@@ -101,8 +101,8 @@ const RunProxy = () => {
                 ))}
                 <button type="button" onClick={addParam}>Add Param</button>
 
-                <div style={{ marginTop: '1em' }}>
-                    <button type="submit">Run</button>
+                <div style={{ marginTop: '1em'}}>
+                    <button type="submit" className='run-btn'>Execute</button>
                 </div>
             </form>
 
