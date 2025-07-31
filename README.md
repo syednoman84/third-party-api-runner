@@ -149,8 +149,3 @@ src/main/java
 - Web UI for managing configs
 - OAuth2 support
 
----
-
-## 📄 License
-
-MIT License
