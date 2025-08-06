@@ -153,3 +153,21 @@ src/main/java
 - Web UI for managing configs
 - OAuth2 support
 
+---
+
+## Screenshots
+
+<img width="1414" height="608" alt="image" src="https://github.com/user-attachments/assets/e9bc0a99-9d1c-4c60-8f6b-0a790466fb57" />
+<img width="1414" height="711" alt="image" src="https://github.com/user-attachments/assets/5f94682b-fda6-44f4-a3e9-1e02ab3460f8" />
+<img width="1417" height="681" alt="image" src="https://github.com/user-attachments/assets/813e7dd3-e5a3-4b6f-b9e2-57b340b2240e" />
+<img width="1400" height="760" alt="image" src="https://github.com/user-attachments/assets/edb43a7b-96eb-44b3-907d-58713b3f0100" />
+<img width="1404" height="753" alt="image" src="https://github.com/user-attachments/assets/b62640f2-1d9c-4940-b371-744131634153" />
+<img width="1410" height="760" alt="image" src="https://github.com/user-attachments/assets/7d12fee0-c736-483c-b377-be42bb6aa660" />
+<img width="1400" height="494" alt="image" src="https://github.com/user-attachments/assets/1d41217d-dc62-4354-874b-00e1bf15f527" />
+
+
+
+
+
+
+
