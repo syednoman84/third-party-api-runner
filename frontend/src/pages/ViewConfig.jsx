@@ -1,5 +1,6 @@
 // src/pages/ViewConfig.jsx
 import React, { useState } from 'react';
+import ReactJson from 'react-json-view';
 
 const ViewConfig = () => {
   const [dataSourceName, setDataSourceName] = useState('');
@@ -47,7 +48,14 @@ const ViewConfig = () => {
         <div style={{ marginTop: '1em' }}>
           <h3>Data Source: {config.dataSourceName}</h3>
           <p><strong>Created At:</strong> {config.createdAt}</p>
-          <pre>{JSON.stringify(config.config, null, 2)}</pre>
+          <ReactJson
+            src={config.config}
+            name={false}
+            collapsed={false}
+            enableClipboard={true}
+            displayDataTypes={false}
+            style={{ fontSize: '14px' }}
+          />
         </div>
       )}
     </div>

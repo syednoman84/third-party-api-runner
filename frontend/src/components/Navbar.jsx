@@ -11,7 +11,8 @@ const NavBar = () => {
             </div>
             <ul className="navbar-links">
                 <li><Link to="/run-proxy">Run API</Link></li>
-                <li><Link to="/view-config">View Config</Link></li>
+                <li><Link to="/view-all-configs">View All Configs</Link></li>
+                <li><Link to="/view-config">View Single Config</Link></li>
                 <li><Link to="/add-config">Add Config</Link></li>
                 <li><Link to="/update-config">Update Config</Link></li>
                 <li><Link to="/delete-config">Delete Config</Link></li>

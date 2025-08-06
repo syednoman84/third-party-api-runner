@@ -10,8 +10,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
+import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/configs")
@@ -86,9 +88,15 @@ public class ConfigController {
                         .body(Map.of("error", "Config not found for: " + dataSourceName)));
     }
 
-
-
-
+    @GetMapping("/all")
+    public List<ConfigResponseDto> getAllConfigs() {
+        return configRepository.findAll().stream()
+                .map(config -> new ConfigResponseDto(
+                        config.getDataSourceName(),
+                        config.getConfig(),
+                        config.getCreatedAt()))
+                .collect(Collectors.toList());
+    }
 
 
 }
