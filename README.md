@@ -76,6 +76,10 @@ PUT /api/add/configs/{dataSourceName}
 DELETE /api/add/configs/{dataSourceName}
 ```
 
+## <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman" width="30" style="vertical-align: middle;" /> Postman Collection
+
+- https://github.com/syednoman84/third-party-api-runner/blob/master/backend/third-part-api-runner.postman_collection.json
+
 ---
 
 ## 🧱 Config Table Schema
